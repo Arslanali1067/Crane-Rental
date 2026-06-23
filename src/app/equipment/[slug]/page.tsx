@@ -312,19 +312,19 @@ export default function VehicleDetail({ params }: PageProps) {
             {/* Action buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="tel:0506786553"
-                className="bg-primary text-black hover:bg-white px-8 py-4.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-lg shadow-primary/10 hover:shadow-white/5 flex items-center gap-2.5 active:scale-95"
+                href="tel:+97143200389"
+                className="border border-primary/40 hover:border-primary text-primary hover:bg-primary hover:text-white px-8 py-4.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all duration-300 active:scale-95 flex items-center gap-2.5"
               >
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <Link
-                href="/#inquiry"
+              <a
+                href="mailto:Info@dhllifting.com"
                 className="bg-surface-card hover:bg-surface-card-hover border border-surface-border hover:border-primary/20 text-white px-8 py-4.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center gap-2.5 active:scale-95"
               >
                 <Calendar className="w-4 h-4 text-primary" />
                 Instant Quote
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -394,7 +394,7 @@ export default function VehicleDetail({ params }: PageProps) {
               <div className="mt-8 flex gap-3 p-4 bg-surface-dark border-l-4 border-primary rounded-r-lg max-w-2xl text-xs text-text-secondary italic leading-relaxed">
                 <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
                 <span>
-                  Disclaimer: Performance values are approximate, subject to configuration, counterweight, and soil compaction. Consult a certified Alwafi lifting specialist for exact lifting designs.
+                  Disclaimer: Performance values are approximate, subject to configuration, counterweight, and soil compaction. Consult a certified Al Taef lifting specialist for exact lifting designs.
                 </span>
               </div>
             </div>

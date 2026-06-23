@@ -25,9 +25,9 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Equipment List", href: "/equipment" },
-    { name: "Site Survey", href: "/#survey" },
-    { name: "Operator Rental", href: "/#operator" },
-    { name: "Contact Us", href: "/#contact" },
+    { name: "Site Survey", href: "/site-survey" },
+    { name: "Operator Rental", href: "/operator-rental" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -39,13 +39,13 @@ export default function Header() {
             : "bg-transparent border-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <span className="w-1.5 h-7 bg-primary rounded-full block group-hover:scale-y-110 transition-transform"></span>
-            <span className="text-2xl font-display font-extrabold tracking-tighter text-white">
-              ALWAFI
-            </span>
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex justify-between items-center">
+          <Link href="/" className="flex items-center group">
+            <img
+              src="/logo.png"
+              alt="Al Taef Logo"
+              className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -81,18 +81,18 @@ export default function Header() {
                 Live Support
               </span>
               <a
-                href="tel:0506786553"
+                href="tel:+97143200389"
                 className="text-sm font-extrabold text-white hover:text-primary transition-colors flex items-center gap-1.5"
               >
                 <Phone className="w-3.5 h-3.5 text-primary" />
-                050 678 6553
+                +971 43200389
               </a>
             </div>
 
             {/* CTA Button */}
             <a
-              href="/#inquiry"
-              className="bg-primary text-black hover:bg-white px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-lg shadow-primary/10 hover:shadow-white/5 flex items-center gap-2"
+              href="mailto:Info@dhllifting.com"
+              className="border border-primary/40 hover:border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 active:scale-95 flex items-center gap-2"
             >
               <CalendarRange className="w-4 h-4" />
               Instant Quote
@@ -142,13 +142,17 @@ export default function Header() {
             <span className="text-xs text-text-muted uppercase tracking-widest font-bold">
               Emergency Hotlines
             </span>
-            <a href="tel:0506786553" className="text-xl font-bold text-white flex items-center gap-2">
+            <a href="tel:+97143200389" className="text-xl font-bold text-white flex items-center gap-2">
               <Phone className="w-5 h-5 text-primary" />
-              050 678 6553
+              +971 43200389
             </a>
-            <a href="tel:0589595365" className="text-xl font-bold text-white flex items-center gap-2">
+            <a href="tel:+971556089117" className="text-xl font-bold text-white flex items-center gap-2">
               <Phone className="w-5 h-5 text-primary" />
-              058 959 5365
+              +971 556089117
+            </a>
+            <a href="tel:+971522606764" className="text-xl font-bold text-white flex items-center gap-2">
+              <Phone className="w-5 h-5 text-primary" />
+              +971 52 260 6764
             </a>
           </div>
         </div>

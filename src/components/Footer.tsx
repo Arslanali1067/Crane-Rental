@@ -9,11 +9,12 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col items-center text-center mb-20">
-          <Link href="/" className="flex items-center gap-3 mb-12 group">
-            <span className="w-2.5 h-9 bg-primary rounded-full block group-hover:scale-y-110 transition-transform"></span>
-            <span className="text-3xl font-display font-extrabold tracking-tighter text-white">
-              ALWAFI
-            </span>
+          <Link href="/" className="flex items-center mb-12 group">
+            <img
+              src="/logo.png"
+              alt="Al Taef Logo"
+              className="h-16 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
           </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
@@ -26,7 +27,7 @@ export default function Footer() {
                 Dubai Office
               </h5>
               <p className="text-sm text-text-secondary leading-relaxed max-w-[280px]">
-                Sheikha Mahra Al Ghurair Building, G floor, RAG Global Business Hub LLC, Al Qusais 2, Dubai, UAE
+                ST # 14B RAS AL KHOR INDUSTRIAL AREA 1 , DUBAI, UAE
               </p>
             </div>
 
@@ -39,16 +40,16 @@ export default function Footer() {
                 Mail Us
               </h5>
               <a
-                href="mailto:info@alwafigcc.com"
+                href="mailto:Info@dhllifting.com"
                 className="text-sm text-text-secondary hover:text-primary transition-colors mb-1"
               >
-                info@alwafigcc.com
+                Info@dhllifting.com
               </a>
               <a
-                href="mailto:support@alwafigcc.com"
+                href="mailto:Info@altaefstar.ae"
                 className="text-sm text-text-secondary hover:text-primary transition-colors"
               >
-                support@alwafigcc.com
+                Info@altaefstar.ae
               </a>
             </div>
 
@@ -61,16 +62,22 @@ export default function Footer() {
                 Hotlines
               </h5>
               <a
-                href="tel:0506786553"
+                href="tel:+97143200389"
                 className="text-base font-bold text-white hover:text-primary transition-colors mb-1"
               >
-                050 678 6553
+                +971 43200389
               </a>
               <a
-                href="tel:0589595365"
-                className="text-sm text-text-secondary hover:text-primary transition-colors"
+                href="tel:+971556089117"
+                className="text-sm text-text-secondary hover:text-primary transition-colors mb-1 block"
               >
-                058 959 5365
+                +971 556089117
+              </a>
+              <a
+                href="tel:+971522606764"
+                className="text-sm text-text-secondary hover:text-primary transition-colors block"
+              >
+                +971 52 260 6764
               </a>
             </div>
           </div>
@@ -81,7 +88,7 @@ export default function Footer() {
           <p className="text-xs text-text-muted text-center md:text-left">
             Copyright © {new Date().getFullYear()}.{" "}
             <span className="text-white font-medium">
-              AlWafi Construction Equipment L.L.C.
+              Al Taef Construction Equipment L.L.C.
             </span>{" "}
             All rights reserved.
           </p>

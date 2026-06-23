@@ -97,19 +97,48 @@ export default function EquipmentList() {
   });
 
   return (
-    <div className="min-h-screen py-16 relative">
-      <div className="absolute inset-0 industrial-grid opacity-[0.1] pointer-events-none z-0"></div>
+    <main className="min-h-screen bg-bg-dark text-white pt-32 pb-24 relative overflow-hidden">
+      {/* Background Radial Glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+      
+      <div className="absolute inset-0 industrial-grid opacity-[0.05] pointer-events-none z-0"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        {/* Page Title & Intro */}
-        <div className="mb-16 text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-block h-1 w-12 bg-primary mb-2"></div>
-          <h1 className="text-4xl md:text-5xl font-display font-black text-white uppercase tracking-tight">
-            Mobile Crane Fleet
-          </h1>
-          <p className="text-sm md:text-base text-text-secondary leading-relaxed">
-            Discover our extensive range of heavy-duty mobile cranes, engineered for precision, power, and safety in every lift. From urban projects to massive industrial sites across the UAE.
-          </p>
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <span>/</span>
+          <span className="text-white">Equipment List</span>
+        </div>
+
+        {/* Hero Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+          <div className="lg:col-span-7 space-y-6">
+            <h1 className="text-4xl md:text-6xl font-display font-black uppercase tracking-tight leading-tight">
+              Mobile <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">
+                Crane Fleet
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-text-secondary leading-relaxed font-sans">
+              Discover our extensive range of heavy-duty mobile cranes, engineered for precision, power, and safety in every lift. From urban projects to massive industrial sites across the UAE.
+            </p>
+          </div>
+          
+          <div className="lg:col-span-5 relative w-full flex items-center justify-center">
+            {/* Ambient gold/red background circle */}
+            <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] blur-[80px] animate-pulse-glow"></div>
+            
+            {/* Main Hero Image with Premium border-glow container */}
+            <div className="relative border border-surface-border bg-gradient-to-b from-surface-card to-bg-dark rounded-3xl p-4 shadow-2xl w-full group overflow-hidden flex items-center justify-center aspect-square max-w-md">
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-50"></div>
+              <img
+                src="/hero-machinery.png"
+                alt="Al Taef Mobile Crane Fleet"
+                className="w-full h-full object-contain rounded-2xl transform group-hover:scale-[1.03] transition-transform duration-700 filter drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)]"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Filters Controls */}
@@ -231,6 +260,6 @@ export default function EquipmentList() {
           </div>
         )}
       </div>
-    </div>
+    </main>
   );
 }

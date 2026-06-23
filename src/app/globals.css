@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #F5A623;
-  --color-primary-dark: #D48C16;
-  --color-primary-glow: rgba(245, 166, 35, 0.15);
+  --color-primary: #E52E2A;
+  --color-primary-dark: #B81D1A;
+  --color-primary-glow: rgba(229, 46, 42, 0.15);
   
   --color-bg-dark: #0B0D0E;
   --color-surface-dark: #121517;
   --color-surface-card: #181C1F;
   --color-surface-card-hover: #22282C;
   --color-surface-border: rgba(255, 255, 255, 0.05);
-  --color-surface-border-hover: rgba(245, 166, 35, 0.3);
+  --color-surface-border-hover: rgba(255, 255, 255, 0.1);
   
   --color-text-primary: #FFFFFF;
   --color-text-secondary: #9AA7B2;
@@ -41,7 +41,7 @@ body {
 }
 
 .glass-effect:hover {
-  border-color: rgba(245, 166, 35, 0.2);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Industrial Grid Pattern */
@@ -54,11 +54,11 @@ body {
 
 /* Radial Glow Backgrounds */
 .radial-glow-hero {
-  background: radial-gradient(circle at 80% 20%, rgba(245, 166, 35, 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle at 80% 20%, rgba(229, 46, 42, 0.02) 0%, transparent 60%);
 }
-
+ 
 .radial-glow-survey {
-  background: radial-gradient(circle at 10% 80%, rgba(245, 166, 35, 0.06) 0%, transparent 50%);
+  background: radial-gradient(circle at 10% 80%, rgba(229, 46, 42, 0.01) 0%, transparent 50%);
 }
 
 /* Micro animations */

@@ -33,13 +33,13 @@ export default function Home() {
 
   const categories = [
     {
-      name: "Access Platforms",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFVITdlrAOM6t3GMRRgVxz7IsXu4Uchd4PYvdS8G34QZ6JL8TuJ44TVEU8ZvDiLCCXI8g9DX9mbg4cT3UQu8bqMgIXFsUsjNTa-0PtwvreYamJbxtIIgudY23DWd4CM8zW7ErtIdHhpAyOBOwSBlI0paC9TEiOOIBHGZtQy7Cro3NCTNKyy-FukAxw9uSO_LdUli2TD8ZZ6dYo5UkB2M0Cd4hG9Lb3pEVql5FGAOPdWDK3n-I22wP9xbUXzu_GgpmN3aSRRN4wKgao",
+      name: "Trucks",
+      image: "/trucks.png",
       href: "/equipment",
     },
     {
-      name: "Mini Cranes",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3Ttmqc5te9bpxAE8ZVmBbe5LQVnrtJ5fUhy-kwdyjY0DqDQwwMXSVU40hf1GyZdoVL87kK1BluDHpHNaRzAcXVCPfOzEWTAb9A-9EOfR3z1m9HegGg1RE1h9qG438anwxUhPHe4i9UkDgW6aY6Cx3YkcgC9l-Om0QiiXu4-nhEOptwkCfiRinz8WswPCtDmgIsFIlVJCUZWoZhoEmab33lL6yyl5nblMEHYcCM3VczhknRd3QmT9LbvQiEguiPLvszvRoCUV44yf",
+      name: "Hiab Cranes",
+      image: "/hiab.png",
       href: "/equipment",
     },
     {
@@ -48,13 +48,8 @@ export default function Home() {
       href: "/equipment",
     },
     {
-      name: "Forklift",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAC3j5X6tpaRna8G8eTBc-WxTD6oVxNBewrQ5Dp6R269Cc0dWxaFhBrnZmPvdhaEuyLDdHfT4EnMB6-9Ile4d0kbyjgJeqkj4xiKgLZ2NqA6s3IpU4iJY-unR1KvcpgRqJZuUmcjqBaNxp2oHWjZLSHA8a6QTr8ccfYgt1rRLPoNkWjldeujAgCWt3Z1rx3SeW4l8JTUVr4xh_AKkqTmLDPnBOGEnjFYq0PK6OXvpuZMJtvInSWj25VebAWzDXRyZ-d13FdjVfVFcXV",
-      href: "/equipment",
-    },
-    {
-      name: "Boomloader",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB5ltnWyjUZYbUmLPEQ6J3O1tJ8pmIy-AMFomQ1j6ZQeR43zydg2KsJ0SfC9Eem_ZC04T8ZZjpzV3O4PNs-PXpgrfGaQaHwkxKq6gO2_RdmfcN1lOZw9HmRNXBLWy6-BnuZejVw6bu7kUVmpPqzy6LBIkURGGSXvuml73vWUe7CwwV40daPuvOaifcD9HQ0_wxjumKcvcGDGJxhNjG03lt1hGbvc0f2BrdsUsoqeyXsDrIDEgYQ5pROBcWRaw9p_zoyj7Uz6ne8_RW6",
+      name: "Manlift",
+      image: "/manlift.png",
       href: "/equipment",
     },
     {
@@ -137,7 +132,7 @@ export default function Home() {
               </h1>
 
               <p className="text-sm text-text-secondary leading-relaxed">
-                Alwafi is the ultimate destination for certified heavy machinery and specialized lifting access. Supporting infrastructure and civil engineering projects across the UAE since 2022.
+                Al Taef is the ultimate destination for certified heavy machinery and specialized lifting access. Supporting infrastructure and civil engineering projects across the UAE since 2022.
               </p>
             </div>
 
@@ -146,12 +141,12 @@ export default function Home() {
                 <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <Phone className="w-4.5 h-4.5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[9px] text-text-muted uppercase font-bold tracking-wider">
                     Sales Hotline
                   </p>
-                  <a href="tel:0589595365" className="text-sm font-extrabold text-white hover:text-primary transition-colors">
-                    058 959 5365
+                  <a href="tel:+971556089117" className="text-sm font-extrabold text-white hover:text-primary transition-colors whitespace-nowrap">
+                    +971 556089117
                   </a>
                 </div>
               </div>
@@ -160,12 +155,12 @@ export default function Home() {
                 <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <Phone className="w-4.5 h-4.5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[9px] text-text-muted uppercase font-bold tracking-wider">
-                    General Support
+                    Support Hotline
                   </p>
-                  <a href="tel:0506786553" className="text-sm font-extrabold text-white hover:text-primary transition-colors">
-                    050 678 6553
+                  <a href="tel:+971522606764" className="text-sm font-extrabold text-white hover:text-primary transition-colors whitespace-nowrap">
+                    +971 522606764
                   </a>
                 </div>
               </div>
@@ -181,7 +176,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-50"></div>
               <img
                 src="/hero-machinery.png"
-                alt="Alwafi Heavy Crane Fleet"
+                alt="Al Taef Heavy Crane Fleet"
                 className="w-full h-auto max-h-[420px] object-contain transform group-hover:scale-[1.03] transition-transform duration-700 filter drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)]"
               />
             </div>
@@ -238,17 +233,17 @@ export default function Home() {
               <Link
                 key={idx}
                 href={cat.href}
-                className="bg-surface-card hover:bg-surface-card-hover border border-surface-border rounded-2xl p-8 flex flex-col items-center group transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 shadow-xl"
+                className="bg-surface-card hover:bg-surface-card-hover border border-surface-border rounded-2xl overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 shadow-xl flex flex-col"
               >
-                <div className="w-full h-44 flex items-center justify-center mb-6 relative overflow-hidden">
-                  {/* Subtle hover zoom */}
+                <div className="w-full h-56 bg-bg-dark relative overflow-hidden flex items-center justify-center border-b border-surface-border/50">
+                  {/* Full box hover zoom */}
                   <img
                     src={cat.image}
                     alt={cat.name}
-                    className="h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="w-full flex justify-between items-center border-t border-surface-border pt-6">
+                <div className="p-6 w-full flex justify-between items-center bg-surface-card">
                   <span className="text-sm font-bold uppercase tracking-wider text-white group-hover:text-primary transition-colors">
                     {cat.name}
                   </span>
@@ -268,13 +263,23 @@ export default function Home() {
           <p className="text-xs font-bold uppercase text-text-muted tracking-[0.25em] mb-10">
             Trusted by contracting and logistics companies in GCC
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 opacity-40">
-            {["IBM MEDIA", "GREEN HOST", "YODGY", "ATOMIC SEO", "BOOSTERIO", "SEO MIND"].map((partner, idx) => (
-              <div key={idx} className="flex items-center gap-2 group cursor-pointer hover:opacity-100 transition-opacity duration-300">
-                <Building className="w-5 h-5 text-primary" />
-                <span className="text-xs font-extrabold tracking-widest text-white">
-                  {partner}
-                </span>
+          <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10">
+            {[
+              { src: "/partner-1.png", alt: "Partner Logo 1" },
+              { src: "/partner-2.png", alt: "Byrne Equipment Rental" },
+              { src: "/partner-3.png", alt: "Al Laith" },
+              { src: "/partner-4.png", alt: "Wallenius Wilhelmsen Solutions" },
+              { src: "/partner-5.png", alt: "Hills & Fort" },
+            ].map((partner, idx) => (
+              <div
+                key={idx}
+                className="h-16 w-36 md:h-20 md:w-44 flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.alt}
+                  className="max-h-full max-w-full object-contain"
+                />
               </div>
             ))}
           </div>
@@ -351,8 +356,8 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="#inquiry"
-              className="bg-primary text-black hover:bg-white px-10 py-5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-xl shadow-primary/15 hover:shadow-white/5 whitespace-nowrap flex items-center gap-3 group active:scale-95"
+              href="mailto:Info@dhllifting.com"
+              className="border border-primary/40 hover:border-primary text-primary hover:bg-primary hover:text-white px-10 py-5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 whitespace-nowrap flex items-center gap-3 group active:scale-95"
             >
               Schedule Survey
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -361,109 +366,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Inquiry Form */}
-      <section className="py-28 relative z-10" id="inquiry">
-        <div className="max-w-3xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-16 space-y-4">
-            <span className="text-primary font-bold uppercase tracking-[0.25em] text-xs">
-              CONTACT & ENQUIRIES
-            </span>
-            <h2 className="text-4xl font-display font-black text-white uppercase tracking-tight">
-              Get an Instant Quote
-            </h2>
-            <p className="text-sm text-text-secondary max-w-md mx-auto">
-              Fill out the form below with your requirements, and our sales team will contact you with a customized estimate within 2 hours.
-            </p>
-          </div>
 
-          <form 
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thank you! Your enquiry has been received. Our sales engineer will call you shortly.");
-            }}
-            className="bg-surface-card border border-surface-border rounded-2xl p-8 md:p-10 space-y-6 shadow-2xl"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-wider text-white block">
-                  Your Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. John Doe"
-                  className="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary/50 transition-colors"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-wider text-white block">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  required
-                  placeholder="e.g. +971 50 678 6553"
-                  className="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary/50 transition-colors"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-wider text-white block">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="e.g. info@company.com"
-                  className="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary/50 transition-colors"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-wider text-white block">
-                  Equipment Category
-                </label>
-                <select
-                  className="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-sm text-text-secondary focus:outline-none focus:border-primary/50 transition-colors"
-                >
-                  <option value="mobile-crane">Mobile Crane (25T - 500T)</option>
-                  <option value="access-platform">Access Platform / Man-Lift</option>
-                  <option value="mini-crane">Mini Spider Crane</option>
-                  <option value="forklift">Industrial Forklift</option>
-                  <option value="boomloader">JCB Boomloader</option>
-                  <option value="excavator">Mini Excavator</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-white block">
-                Project Details / Special Requirements
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Mention lifting capacity, heights, site location (Dubai, Abu Dhabi, etc.), or duration..."
-                className="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary/50 transition-colors resize-none"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-primary text-black hover:bg-white font-bold py-4 rounded-lg text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-primary/10 active:scale-[0.98]"
-            >
-              Submit Quote Request
-            </button>
-          </form>
-        </div>
-      </section>
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
         {/* WhatsApp Float */}
         <a
-          href="https://wa.me/971506786553"
+          href="https://wa.me/971556089117"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-[#25D366] text-white rounded-xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group relative"
