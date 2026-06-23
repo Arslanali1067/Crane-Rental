@@ -17,9 +17,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Al Taef Crane Rental | Premium Heavy Machinery & Access Solutions UAE",
+  title: "Al Taef Star Group | Premium Heavy Machinery & Access Solutions UAE",
   description: "Certified equipment rental in the UAE. Mobile cranes (25T to 500T), access platforms, forklifts, and site survey assessments with 24/7 support.",
-  keywords: ["crane rental Dubai", "heavy machinery rental UAE", "mobile crane rental UAE", "access platforms Dubai", "Al Taef crane"],
+  keywords: ["crane rental Dubai", "heavy machinery rental UAE", "mobile crane rental UAE", "access platforms Dubai", "Al Taef Star Group"],
 };
 
 export default function RootLayout({

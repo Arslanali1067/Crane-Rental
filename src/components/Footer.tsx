@@ -88,7 +88,7 @@ export default function Footer() {
           <p className="text-xs text-text-muted text-center md:text-left">
             Copyright © {new Date().getFullYear()}.{" "}
             <span className="text-white font-medium">
-              Al Taef Construction Equipment L.L.C.
+              Al Taef Star Group
             </span>{" "}
             All rights reserved.
           </p>
