@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F5A623;
+  --color-primary-dark: #D48C16;
+  --color-primary-glow: rgba(245, 166, 35, 0.15);
+  
+  --color-bg-dark: #0B0D0E;
+  --color-surface-dark: #121517;
+  --color-surface-card: #181C1F;
+  --color-surface-card-hover: #22282C;
+  --color-surface-border: rgba(255, 255, 255, 0.05);
+  --color-surface-border-hover: rgba(245, 166, 35, 0.3);
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9AA7B2;
+  --color-text-muted: #5F6F7C;
+  
+  --font-sans: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-display: var(--font-outfit), system-ui, sans-serif;
+}
+
+:root {
+  --background: #0B0D0E;
+  --foreground: #E5E9EC;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Premium Glassmorphism */
+.glass-effect {
+  background: rgba(24, 28, 31, 0.6);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-effect:hover {
+  border-color: rgba(245, 166, 35, 0.2);
+}
+
+/* Industrial Grid Pattern */
+.industrial-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+}
+
+/* Radial Glow Backgrounds */
+.radial-glow-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(245, 166, 35, 0.08) 0%, transparent 60%);
+}
+
+.radial-glow-survey {
+  background: radial-gradient(circle at 10% 80%, rgba(245, 166, 35, 0.06) 0%, transparent 50%);
+}
+
+/* Micro animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 6s infinite ease-in-out;
+}
+
